@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Food Delivery</title>
+    <style>
+
+        .height_img{
+            height:350px;
+            background-position:cover;
+            background-size:100%;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjAJXF635qARSs1zHo3KvoA60wT6oqzoyZh-chlF_viUMeVAsU&usqp=CAU');
+            background-repeat: no-repeat;
+            }
+
+            .icon{
+            height:50px;
+            width:50px;
+            }
+
+
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+      <img class="rounded-circle img-fluid icon"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-fhoMKzx5yVIT2Dwe1UHrcefHpMrt2MyABjybsORWvjqD-FFR&usqp=CAU">
+    
+        <form class="form-inline">
+    
+      
+        <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#register" data-whatever="@mdo">Register</button>
+
+        <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#login" data-whatever="@getbootstrap">Login</button>
+      
+        <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#res_login" data-whatever="@mdo">Restaurant_register</button>
+
+
+
+            <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registration Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Username</label>
+                            <input type="text" class="form-control" id="reg_name">
+                        </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Password</label>
+                        <input type="text" class="form-control" id="reg_password">
+                    </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="reg_details" class="btn btn-primary">Submit</button>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </form>
+
+                                                     
+                                                     
+                <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Username</label>
+                            <input type="text" class="form-control" id="login_name">
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Password</label>
+                            <input type="text" class="form-control" id="login_password">
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button id="login_details" type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </form>
+                </nav>
+
+
+  
+                <div class="modal fade" id="res_login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Username</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Password</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="res_reg_details" class="btn btn-primary">Submit</button>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </form>
+                </nav>
+  
+    <div class="jumbotron  height_img">
+        <div class="container">
+        <h1 class="display-4 text-white">Delicious Food</h1>
+     </div>
+    </div>
+    
+    <nav class="navbar navbar-dark ">
+    <!-- Navbar content -->
+
+      <a></a>
+    <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Restaurant" aria-label="Search">
+       <input class="form-control mr-sm-2" type="search" placeholder="location" aria-label="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="check.js">
+
+  </script>
+
+  </body>
+</html>
